@@ -14,7 +14,7 @@ function getMeme(e) {
             
             let output = ''
             
-            output += `<img src=${response}>`
+            output += `<img style="max-width:100%, max-height:100%;" src=${response}>`
             
             document.querySelector('.meme').innerHTML = output
         } else {
