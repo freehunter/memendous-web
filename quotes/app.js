@@ -1,4 +1,4 @@
-document.querySelector('.get-meme').addEventListener('click', getMeme)
+document.querySelector('.get-quote').addEventListener('click', getMeme)
 
 function getMeme(e) {
     const top = document.querySelector('#top').value
