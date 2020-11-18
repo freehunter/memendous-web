@@ -1,8 +1,7 @@
-document.querySelector('.get-quote').addEventListener('click', getMeme)
+document.querySelector('.get-quote').addEventListener('click', getQuote)
 
-function getMeme(e) {
-    const top = document.querySelector('#top').value
-    const bottom = document.querySelector('#bottom').value
+function getQuote(e) {
+    console.log("Made it to getQuote")
     
     const xhr = new XMLHttpRequest()
     
@@ -18,6 +17,7 @@ function getMeme(e) {
             
             document.querySelector('.meme').innerHTML = output
         } else {
+            console.log("there was some minor failing")
             document.querySelector('.meme').innerHTML = "Something went wrong"
         }
     }
